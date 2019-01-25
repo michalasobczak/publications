@@ -1,4 +1,4 @@
-%w(action_controller/railtie coderay).map &method(:require)
+%w(action_controller/railtie).map &method(:require)
 run TheSmallestRailsApp ||= Class.new(Rails::Application) {
   config.secret_token = routes.append { root to: 'hello#world' }.inspect
   initialize!
@@ -11,3 +11,4 @@ class HelloController < ActionController::Base
       <p>Hello, world!</p>"
   end
 end
+
