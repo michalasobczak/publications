@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
 import java.util.Random;
 import static org.jocl.CL.*;
 import static org.jocl.CL.CL_MEM_READ_WRITE;
@@ -137,9 +138,12 @@ class KernelConfigurationSet {
             long aTime = ZonedDateTime.now().toInstant().toEpochMilli();
             clEnqueueNDRangeKernel(this.commandQueue, this.kernel, 1, null, this.global_work_size, this.local_work_size, 0, null, null);
             long bTime = ZonedDateTime.now().toInstant().toEpochMilli();
+            System.out.println("Took OpenCL calculate: " + String.valueOf(bTime - aTime) + "ms");
             // Read the output data
+            aTime = ZonedDateTime.now().toInstant().toEpochMilli();
             clEnqueueReadBuffer(this.commandQueue, this.memObjects[1], CL_TRUE, 0, (long) n * Sizeof.cl_float * 100, KernelConfigurationSet.dst, 0, null, null);
-            System.out.println("Took OpenCL: " + String.valueOf(bTime - aTime) + "ms");
+            bTime = ZonedDateTime.now().toInstant().toEpochMilli();
+            System.out.println("Took OpenCL read result: " + String.valueOf(bTime - aTime) + "ms");
         }
     }
 
@@ -155,9 +159,17 @@ class KernelConfigurationSet {
 
 
     public void printResults() {
+        ArrayList<Float> nonZeroElements = new ArrayList<Float>();
+        for (float tmp : dstArray) {
+            if (tmp != 0.0) {
+                nonZeroElements.add(tmp);
+            }
+        }
         if (this.n <= 1024) {
             System.out.println("Result: " + java.util.Arrays.toString(KernelConfigurationSet.dstArray));
+            System.out.println("nonZeroElements: " + nonZeroElements.toString());
         }
+        System.out.println("nonZeroElements count: " + nonZeroElements.size());
         System.out.println("Last result: " + KernelConfigurationSet.srcArrayA[n-1] + " giving " + KernelConfigurationSet.dstArray[n-1]);
     }
 
