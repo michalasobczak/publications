@@ -6,5 +6,5 @@ __kernel void sampleKernel(__global const float *a,
     while (1) {
       j = j + 1;
     }
-    d[gid] = gid;
+    d[gid] = j;
 }
