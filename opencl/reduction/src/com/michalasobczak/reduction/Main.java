@@ -32,8 +32,8 @@ public class Main {
 
         // -----
         Utils.log("3. Platform and device selection");
-        r.selectPlatform(1);
-        r.selectDevice(1);
+        r.selectPlatform(0);
+        r.selectDevice(0);
 
         // -----
         Utils.log("4. Create input and output data");
