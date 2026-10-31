@@ -1,5 +1,7 @@
 # Publications
 
+> **All code in this repository was written by hand, without the use of AI.** As a result, it contains original, one-of-a-kind human mistakes and flawed logic — the very things that make us human.
+
 Books written or edited by Michał Sobczak, with their source code and companion materials.
 Each folder is one publication. Descriptions and free PDFs are also on [michalasobczak.pl](https://michalasobczak.pl/?cat=publications).
 
