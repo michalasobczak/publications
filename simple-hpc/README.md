@@ -1,46 +1,17 @@
 # Simple High Performance Computing
 
-This is work in progress book project. You can review contents right now, but please consider visiting this 
-repository periodically as it changes quite fast. The main goal for all of submodules is to excel in terms of both 
-software and hardware performance capabilities, still using commodity utilities. I try not to step into enterprise 
-grade or high pricing solutions willing to accomplish my tasks within modest budget and time frame.
+**Part 1: Podstawy elektroniki i budowa komputera w symulatorze** (Basics of electronics and building a computer in a simulator) — 2021, ISBN 978-83-8273-126-2, in Polish.
 
-## Finished
+The first part of the *Simple High Performance Computing* series. It starts from the physics behind electronic components, builds ever larger circuits from them and ends with the simplest working digital computer — all in a circuit simulator. The focus is on practice; the theory comes along where it is needed. The series aims at real performance on commodity hardware, within a modest budget.
 
-### Part 1 - "Podstawy elektroniki i budowa komputera w symulatorze" (SeriesPartOne)
-Please find TINA TI examples from the first part of series.
+- About the book: https://michalasobczak.pl/posts/simple-high-performance-computing.html
+- Free PDF: https://michalasobczak.pl/wp-content/uploads/2022/09/978-83-8273-126-2_Simple-High-Performance-Computing-5-10-1.pdf
 
-### Part 5 - "OpenCL, programowanie CPU i GPU" (SeriesPartFive)
+## Contents
 
-#### Modules available
+| Folder | What it is |
+|---|---|
+| [SeriesPartOne](SeriesPartOne) | TINA-TI simulator circuits for the book's figures (`01.TSC` … `28.TSC`) |
+| [SeriesPartTwo/c64](SeriesPartTwo/c64) | Commodore 64 C examples (cc65) for the next part of the series |
 
-There are few examples available:
-- main module (opencl/src)
-- bandwidth (set of tests checking various scalar operation performance)
-- c64_3d (orthographic and perspective calculations)      
-- naive_sort (array indexing)
-- pi_est_monte_carlo (estimating PI by direct relation between square and circle)
-- picture
-- reduction
-- reference_c
-- sort2
-
-#### How to run
-
-In order to run samples (i.e. bandwidth, com.michalasobczak.bandwidth), try as it as follows:
-
-```
-$HOME/.jdks/openjdk-15.0.2/bin/java 
--classpath $HOME/IdeaProjects/simple_hpc/opencl/out/production/bandwidth
-          :$HOME/jocl-2.0.2.jar
-          :$HOME/IdeaProjects/simple_hpc/opencl/out/production/opencl com.michalasobczak.bandwidth.Main
-```
-
-It will work properly assuming you:
-- fetched code into $HOME/IdeaProjects/simple_hpc
-- downloaded JOCL library JAR into $HOME as well
-- built modules (main and bandwidth) to output out/production output folder
-
-You can also run it directly from IntelliJ or other IDE.
-
-
+The OpenCL part of the series is a separate publication: see [../opencl](../opencl).
