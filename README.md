@@ -16,5 +16,5 @@ All books are in Polish.
 
 ## License
 
-Code and materials in this repository: [CC BY-NC-SA 4.0](LICENSE) — share and adapt for non-commercial purposes, with attribution, under the same license.
+© 2006–2026 Michał Sobczak. Code and materials in this repository: [CC BY-NC-SA 4.0](LICENSE) — share and adapt for non-commercial purposes, with attribution, under the same license.
 The book texts themselves are not part of this repository and remain under their copyright.
