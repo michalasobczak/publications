@@ -1,9 +1,10 @@
 # Jakość oprogramowania. Podręcznik dla profesjonalistów
 
-Helion, in Polish.
+Helion, 21 April 2020 · ISBN 978-83-283-6102-7 (print), 978-83-283-6951-1 (e-book) · in Polish.
 
 What is software quality — only the technical perfection of code, or much more? The book covers how to recognise good code, how quality is measured in IT projects, how to reach and keep it, which tools help, and how to limit the damage when defects do happen. It was the first book of its kind on the Polish market.
 
+- Publisher: https://helion.pl/ksiazki/jakosc-oprogramowania-podrecznik-dla-profesjonalistow-michal-sobczak,jakosc.htm
 - About the book: https://michalasobczak.pl/posts/jakosc-oprogramowania-podrecznik-dla-profesjonalistow.html
 
 ## Contents

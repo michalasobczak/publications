@@ -1,6 +1,6 @@
 # Simple High Performance Computing
 
-**Part 1: Podstawy elektroniki i budowa komputera w symulatorze** (Basics of electronics and building a computer in a simulator) — 2021, ISBN 978-83-8273-126-2, in Polish.
+**Part 1: Podstawy elektroniki i budowa komputera w symulatorze** (Basics of electronics and building a computer in a simulator) — Ridero, 2021 · ISBN 978-83-8273-126-2 · in Polish.
 
 The first part of the *Simple High Performance Computing* series. It starts from the physics behind electronic components, builds ever larger circuits from them and ends with the simplest working digital computer — all in a circuit simulator. The focus is on practice; the theory comes along where it is needed. The series aims at real performance on commodity hardware, within a modest budget.
 

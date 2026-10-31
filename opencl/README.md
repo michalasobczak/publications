@@ -1,6 +1,6 @@
 # OpenCL. Programowanie CPU i GPU
 
-E-book, 2022, in Polish. Part of the *Simple High Performance Computing* series.
+Ridero, 2022 · ISBN 978-83-8273-803-2 · in Polish. Part of the *Simple High Performance Computing* series.
 
 More than a decade after OpenCL appeared, the book explains the standard and the hardware it runs on, then shows working examples on both historic and current CPUs and GPUs — to test whether theory matches practice. The examples reach up to a **50× speed-up of the GPU over the CPU** on the same algorithm.
 
