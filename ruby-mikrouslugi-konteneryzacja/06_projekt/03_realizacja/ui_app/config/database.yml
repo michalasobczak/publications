@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: logs
+  password: abc123!
+  host: 172.28.128.11
+  port: 5432
+  schema_search_path: myapp,sharedapp,public
+
+development:
+  <<: *default
+  database: logs
+
+test: &test
+  <<: *default
+  database: ui_app_test
+
+cucumber:
+  <<: *test
