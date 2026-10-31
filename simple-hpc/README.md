@@ -43,16 +43,4 @@ It will work properly assuming you:
 
 You can also run it directly from IntelliJ or other IDE.
 
-## WIP
-
-### Part 4 - OpenGL
-
-### Part 6 - data mining
-
-## TBD
-
-### Part 2 - home computing
-
-### Part 3 - multimedia computing
-
 
